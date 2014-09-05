@@ -1,5 +1,14 @@
 body {
   height: 1000px !important;
+  background: #939597; /* Old browsers */
+  background: -moz-radial-gradient(center, ellipse cover,  #939597 0%, #58585b 100%); /* FF3.6+ */
+  background: -webkit-gradient(radial, center center, 0px, center center, 100%, color-stop(0%,#939597), color-stop(100%,#58585b)); /* Chrome,Safari4+ */
+  background: -webkit-radial-gradient(center, ellipse cover,  #939597 0%,#58585b 100%); /* Chrome10+,Safari5.1+ */
+  background: -o-radial-gradient(center, ellipse cover,  #939597 0%,#58585b 100%); /* Opera 12+ */
+  background: -ms-radial-gradient(center, ellipse cover,  #939597 0%,#58585b 100%); /* IE10+ */
+  background: radial-gradient(ellipse at center,  #939597 0%,#58585b 100%); /* W3C */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#939597', endColorstr='#58585b',GradientType=1 ); /* IE6-9 fallback on horizontal gradient */
+
 }
 
 .fixed {
@@ -80,8 +89,59 @@ body {
   font-family: 'Open Sans', sans-serif;
   text-align: center;
   text-transform: uppercase;
+  color: #fff;
+}
+
+.text-container h1 {
+  font-weight: 300;
 }
 
 .ui-page{background:transparent !important;} 
 .ui-body-c{background:transparent !important;} 
-.ui-page-active{background:transparent !important;
+.ui-page-active{background:transparent !important;}
+/*
+==============================================
+pulse
+==============================================
+*/
+
+.pulse{
+animation-name: pulse;
+-webkit-animation-name: pulse;  
+
+animation-duration: 1.5s; 
+-webkit-animation-duration: 1.5s;
+
+animation-iteration-count: infinite;
+-webkit-animation-iteration-count: infinite;
+}
+
+@keyframes pulse {
+0% {
+  transform: scale(0.9);
+  opacity: 0.7;   
+}
+50% {
+  transform: scale(1);
+  opacity: 1; 
+} 
+100% {
+  transform: scale(0.9);
+  opacity: 0.7; 
+}     
+}
+
+@-webkit-keyframes pulse {
+0% {
+  -webkit-transform: scale(0.95);
+  opacity: 0.7;   
+}
+50% {
+  -webkit-transform: scale(1);
+  opacity: 1; 
+} 
+100% {
+  -webkit-transform: scale(0.95);
+  opacity: 0.7; 
+}     
+}

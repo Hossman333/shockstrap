@@ -33,6 +33,7 @@ $(function() {
 
     $('.button').click(function() {
         $(this).toggleClass('button-clicked');
+        $(this).toggleClass('pulse');
     })
 
 });
