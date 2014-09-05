@@ -76,12 +76,6 @@ body {
   display: none;
 }
 
-.footer {
-  height: 50px;
-  width: 100%;
-  /*background-color: purple;*/
-}
-
 .ui-page{background:transparent !important;} 
 .ui-body-c{background:transparent !important;} 
 .ui-page-active{background:transparent !important;
