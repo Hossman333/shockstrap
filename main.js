@@ -20,7 +20,7 @@ $(function() {
                 $('.text-container').append('<h1>Cry like a baby</h1>');
                 $('.dial').trigger('configure',{"fgColor":"#252525"})
             } if(value >= 70 && value < 99) {
-                $('.text-container').append('<h1>omg!! I\'m dying!</h1>');
+                $('.text-container').append('<h1>omg!! kill him!</h1>');
                 $('.dial').trigger(
                     'configure',
                     {
