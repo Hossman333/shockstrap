@@ -8,6 +8,16 @@ $(document).on('vmousedown', '.dragme', function(event){
     $(document).on('vmousemove', function(event2){
         scrollY = event2.pageY;
         //EWWWWWWWWWW Definitely need to fix this. 2:35am
+
+
+
+        //WARNING NASTY CODE BELOW. This definitely should be done different. lol
+
+
+
+
+
+
         if(scrollY <= 270) {$('.power-meter div:nth-child(23)').css('background-color', 'rgb(0, 255, 0)');} else {$('.power-meter div:nth-child(23)').css('background-color', '#fff')}
         if(scrollY <= 260) {$('.power-meter div:nth-child(22)').css('background-color', 'rgb(45, 255, 0)');} else {$('.power-meter div:nth-child(22)').css('background-color', '#fff')}
         if(scrollY <= 250) {$('.power-meter div:nth-child(21)').css('background-color', 'rgb(45, 255, 0)');} else {$('.power-meter div:nth-child(21)').css('background-color', '#fff')}
