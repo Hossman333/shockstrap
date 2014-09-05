@@ -2,19 +2,29 @@
 <html lang="en-US">
 <head>
   <title>Shockstrap</title>
-  <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
   <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.css" />
   <link href="style.css" rel="stylesheet" type="text/css" />
 </head>
 <body>
-  <div class="container">
-    <div class="power-meter dragme">
-      <div class="cover"></div>
+  <div class="fixed">
+    <div class="nav">
+      <button class="hamburger" data-role="none"></button>
     </div>
-    <button type="button" class="button" data-role="none">Shock!</button>
+    <div class="logo-container"data-role="none">
+      <img src="images/shockstrap-logo-medium.png" data-role="none">
+    </div>
+    <div class="container">
+      <input type="text" value="75" class="dial" data-role="none">
+      <button type="button" class="button" data-role="none"></button>
+    </div>
+    <div class="footer">
+
+    </div>
   </div>
 <script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
 <script src="http://code.jquery.com/mobile/1.4.3/jquery.mobile-1.4.3.min.js"></script>
+<script src="jquery.knob.min.js"></script>
 <script src="main.js"></script>
 </body>
 </html>

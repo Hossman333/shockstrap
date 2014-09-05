@@ -1,69 +1,85 @@
-.container {
-  width: 960px;
-  margin: 0 auto;
+body {
+  height: 1000px !important;
 }
-.power-meter {
-  z-index: 123;
+
+.fixed {
+  position: fixed;
+  width: 100%;
+}
+
+.container {
   position: relative;
   width: 200px;
-  border: 1px solid #000;
-  overflow: hidden;
-  height: 300px;
-  cursor: default;
   margin: 0 auto;
-  margin-top: 10px;
-  background-image: -webkit-gradient(
-    linear,
-    left top,
-    left bottom,
-    color-stop(0.12, #ED1C23),
-    color-stop(0.36, #F2912A),
-    color-stop(0.66, #F5DE31),
-    color-stop(1, #41B64B)
-  );
-  background-image: -o-linear-gradient(bottom, #ED1C23 12%, #F2912A 36%, #F5DE31 66%, #41B64B 100%);
-  background-image: -moz-linear-gradient(bottom, #ED1C23 12%, #F2912A 36%, #F5DE31 66%, #41B64B 100%);
-  background-image: -webkit-linear-gradient(bottom, #ED1C23 12%, #F2912A 36%, #F5DE31 66%, #41B64B 100%);
-  background-image: -ms-linear-gradient(bottom, #ED1C23 12%, #F2912A 36%, #F5DE31 66%, #41B64B 100%);
-  background-image: linear-gradient(to bottom, #ED1C23 12%, #F2912A 36%, #F5DE31 66%, #41B64B 100%);
 }
 
-.cover {
-  position: absolute;
-  top: 0;
-  height: 300px;
-  width: 200px;
-  background-color: #fff;
-  z-index: 5;
+.container div {
+  display: block !important;
+  margin: 0 auto;
+  margin-top: 50px;
 }
 
-body {
-  text-align: center;
+.nav {
+  display: block;
+  background-color: #252525;
+  height: 50px;
+  width: 100%;
+  overflow: hidden;
+}
+
+.hamburger {
+  height: 16px;
+  width: 16px;
+  background: url('/images/hamburger-icon.png') no-repeat;
+  display: block;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  float: right;
+  margin: 17px 15px 0 0;
+}
+
+.logo-container {
+  height: 75px;
+  width: 100%;
+  background-color: #252525;
+  display: block;
+}
+
+.logo-container img {
+  display: block;
+  margin: 0 auto;
+  margin-top: -15px;
 }
 
 .button {
-  font-family: "Arial", sans-serif;
-  display: block;
-  width: 202px;
-  height: 40px;
-  border: 0;
+  position: absolute;
+  border: none;
+  background: url('images/shock-btn.png') no-repeat;
+  top: 25px;
+  left: 25px;
+  width: 150px;
+  height: 150px;
   cursor: pointer;
-  line-height: 30px;
-  font-size: 24px;
-  margin: 0 auto;
-  background-color: #ee3a3d;
-  text-decoration: none;
-  color: #fff;
   outline: none;
-  -moz-user-select: none;
-  -khtml-user-select: none;
-  -webkit-user-select: none;
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  overflow: hidden;
 }
 
-@media all and (max-width: 1024px) {
-  .container {
-    width: 100%;
-  }
+.button-clicked {
+  background: url('images/shock_active-btn.png') no-repeat;
+}
+
+.dial {
+  display: none;
+}
+
+.footer {
+  height: 50px;
+  width: 100%;
+  /*background-color: purple;*/
 }
 
 .ui-page{background:transparent !important;} 
