@@ -1,6 +1,6 @@
 $(function() {
     $(".dial").knob({
-        "fgColor":"#F9700B",
+        "fgColor":"#FECE06",
         "width":"200",
         change: function (value) {
             $('.text-container').empty();
@@ -44,7 +44,7 @@ $(function() {
                         "fgColor":"#A31D21"
                     }
                 )
-            } if(value >= 70 && value < 99) {
+            } if(value >= 70 && value < 100) {
                 $('.text-container').append('<h1>omg!! kill him!</h1>');
                 $('.dial').trigger(
                     'configure',
